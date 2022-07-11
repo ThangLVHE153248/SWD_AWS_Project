@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-exports.hocBong = [
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-];
-
-exports.hocBong = [
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-  { id: 1, content: "bean1221212" },
-];
-=======
 exports.Register = [
     {
         name: 'Hoang Thi Thuy',
@@ -131,12 +108,20 @@ exports.Profile= [
 
 exports.Exam= [
     {
-        examId
-        profileId
-        subjectId
-        mark
+        examId: "1",
+        profileId:"1",
+        subbject:"math",
+        mark: 20
               
         },
+    {
+        examId: "2",
+        profileId:"1",
+        subbject:"literature",
+        mark: 10
+              
+        },
+    
 
 
 ];
@@ -146,36 +131,36 @@ exports.Result= [
         profileId: 1,
         name: 'Bui Huu Tu',
         idNumber: '89h3hubfeui',
-        totalMark: ,
-        scholarship:
+        totalMark: 20,
+        scholarship: 30
     },
     {
         profileId: 2,
         name: 'Tran Viet Hoang',
         idNumber: 'uih3498fh3h',
-        totalMark: ,
-        scholarship:
+        totalMark: 23,
+        scholarship: 50
     },
     {
         profileId: 3,
         name: 'Nguyen Van Anh',
         idNumber: '3g7f8giu3bui',
-        totalMark: ,
-        scholarship:
+        totalMark: 26,
+        scholarship: 70
     },
     {
         profileId: 4,
         name: 'Nguyen Tuan Dat',
         idNumber: '98389fh8934',
-        totalMark: ,
-        scholarship:
+        totalMark: 25,
+        scholarship: 70
     },
     {
         profileId: 5,
         name: 'Le Anh Minh',
         idNumber: 'aqe38hgu2o',
-        totalMark: ,
-        scholarship:
+        totalMark: 27,
+        scholarship: 100
     },
 
 
@@ -220,4 +205,3 @@ exports.Admin= [
     
 
 ];
->>>>>>> c91e783f9ef59216d353fe8a659a4cbc194d17f6
