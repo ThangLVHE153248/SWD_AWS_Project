@@ -108,6 +108,61 @@ exports.Profile= [
         phone:'123-456-128',
         school: 'THPT ABC',
         location: 'Quảng Trị'
+    },
+    {
+        profileId: 6,
+        name: 'Bui Duy Hung',
+        dob: '09/04/2001',
+        gender: 'M',
+        idNumber: '4njeeo4id',
+        email: 'buiduyhung@gmail.com',
+        phone:'123-456-910',
+        school: 'THPT ABC',
+        location: 'Cà Mau'
+    },
+    {
+        profileId: 7,
+        name: 'Nguyen Minh Tuan',
+        dob: '30/01/1999',
+        gender: 'M',
+        idNumber: 'hfiuofos0',
+        email: 'nguyenminhtuan@gmail.com',
+        phone:'123-456-205',
+        school: 'THPT ABC',
+        location: 'Bến Tre'
+    },
+    {
+        profileId: 8,
+        name: 'Ha Hai Hieu',
+        dob: '13/12/2001',
+        gender: 'M',
+        idNumber: 'xbbweibv3',
+        email: 'hahaihieu@gmail.com',
+        phone:'123-456-319',
+        school: 'THPT ABC',
+        location: 'Hà Nội'
+    },
+    {
+        profileId: 9,
+        name: 'Hoang Hai Anh',
+        dob: '13/5/2001',
+        gender: 'F',
+        idNumber: 'ubi4bg3nask',
+        email: 'hoanghaianh@gmail.com',
+        phone:'123-456-128',
+        school: 'THPT ABC',
+        location: 'Thanh Hoá'
+    },
+    {
+        profileId: 10,
+        name: 'Ly Hoang Tien',
+        dob: '03/11/1999',
+        gender: 'F',
+        idNumber: 'ogewvowni39',
+        email: 'lyhoangtien@gmail.com',
+        phone:'123-456-115',
+        school: 'THPT ABC',
+        location: 'TP. Hồ Chí Minh'
     }
 
 
@@ -168,6 +223,41 @@ exports.Result= [
         idNumber: 'aqe38hgu2o',
         totalMark: 27,
         scholarship: 100
+    },
+    {
+        profileId: 6,
+        name: 'Bui Duy Hung',
+        idNumber: '4njeeo4id',
+        totalMark: 10,
+        scholarship: 0
+    },
+    {
+        profileId: 7,
+        name: 'Nguyen Minh Tuan',
+        idNumber: 'hfiuofos0',
+        totalMark: 25,
+        scholarship: 70
+    },
+    {
+        profileId: 8,
+        name: 'Ha Hai Hieu',
+        idNumber: 'xbbweibv3',
+        totalMark: 29,
+        scholarship: 100
+    },
+    {
+        profileId: 9,
+        name: 'Hoang Hai Anh',
+        idNumber: 'ubi4bg3nask',
+        totalMark: 21,
+        scholarship: 50
+    },
+    {
+        profileId: 10,
+        name: 'Ly Hoang Tien',
+        idNumber: 'ogewvowni39',
+        totalMark: 15,
+        scholarship: 0
     },
 
 
