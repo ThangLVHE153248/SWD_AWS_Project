@@ -1,0 +1,28 @@
+/* NAVBAR */
+nav a,
+nav li {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* .navbar {
+  transition: all 0.4s;
+} */
+.navbar {
+  background-color: #f37125;
+}
+.navbar .nav-link {
+  color: #fff;
+}
+.nav-item {
+  padding: 5px 10px;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
