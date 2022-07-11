@@ -22,19 +22,81 @@
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/registerAdvice.css" />
   </head>
 
   <body>
     <div class="home-main">
-      <div w3-include-html="header.html"></div>
+      <!-- Header -->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg py-1">
+          <div class="container">
+            <a
+              href="./index.html"
+              class="navbar-brand logo text-uppercase font-weight-bold"
+              >AWS
+            </a>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a
+                    href="./index.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Trang chủ <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./scholarship.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Học bổng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./search.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Tra cứu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./login.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Đăng nhập</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
       <!-- Form -->
-      <div class="container">
-        <div class="form__content ml-5 my-4">
-          <div class="form__content__inner">
+      <div class="container px-5">
+        <div class="form__content ml-5 my-5">
+          <div class="form__content__inner px-5">
             <form action="" id="form_ldp" method="post" data-hs-cf-bound="true">
-              <h3 class="text-center">ĐĂNG KÝ</h3>
-              <div class="form-group row">
+              <h3 class="text-center text-capitalize mt-4 mb-3">
+                đăng ký tư vấn tuyển sinh trực tuyến
+              </h3>
+              <p>
+                Để thuận tiện cho việc đăng ký dự thi và xét tuyển của thí sinh,
+                chúng tôi mời bạn đăng ký vào mẫu
+                <strong>đăng ký tư vấn trực tuyến</strong> dưới đây. Đây là căn
+                cứ để chúng tôi có thể <strong>tư vấn online</strong> cho bạn
+                những thông tin sát thực, cập nhật nhất về
+                <strong>kỳ thi tuyển sinh</strong> và
+                <strong>xét tuyển học bạ</strong> của trường Đại Học FPT.
+              </p>
+              <p>Xin điền đầy đủ thông tin tại các mục có dấu (*).</p>
+              <p>
+                Chỉ cần đăng ký 01 lần duy nhất, thông tin của bạn sẽ được lưu
+                trữ trong hệ thống. Chúng tôi sẽ chủ động liên hệ với bạn trong
+                vòng 10 ngày kể từ khi bạn gửi bản đăng ký thông tin sơ bộ này.
+              </p>
+              <div class="form-group row mt-4">
                 <div class="col-md-6">
                   <label for="ex1">Họ và tên *</label>
                   <input
@@ -168,38 +230,6 @@
                 </div>
               </div>
               <div class="form-group row">
-                <div class="col-xs-12">
-                  <label for="ex3">Link Facebook</label>
-                  <input
-                    type="text"
-                    name="facebook"
-                    class="form-control"
-                    placeholder="Link Facebook của bạn"
-                  />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <label>Đăng ký *</label>
-                  <div class="form-group">
-                    <label class="checkbox-inline">
-                      <input type="checkbox" name="type_register" value="TV" />
-                      Tư vấn
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" name="type_register" value="XT" />
-                      Tuyển sinh
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" name="type_register" value="XHB" />
-                      Xét học bổng
-                    </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" name="type_register" value="HB" />
-                      Thi học bổng
-                    </label>
-                  </div>
-                </div>
                 <div class="form-group text-center mb-0">
                   <input type="hidden" name="ldp_id" value="tuyen-sinh" />
                   <input type="hidden" name="utm_source" value="" />
@@ -227,6 +257,62 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer pb-5">
+        <div class="container">
+          <div class="footer-title mb-3">
+            © 2022 Bản quyền thuộc về Trường Đại học FPT.
+          </div>
+          <div class="footer-line mb-2"></div>
+          <div class="footer-contact row">
+            <div class="footer-area col">
+              <div class="contact-title">HÀ NỘI</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">TP. HỒ CHÍ MINH</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">Đà Nẵng</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">Cần Thơ</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">Quy Nhơn</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
           </div>
         </div>
       </div>

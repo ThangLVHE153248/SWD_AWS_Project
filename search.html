@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS - University Admissions Management System</title>
+
+    <!-- Link css and font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/registerAdvice.css" />
+  </head>
+
+  <body>
+    <div class="home-main">
+      <!-- Header -->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg py-1">
+          <div class="container">
+            <a
+              href="./index.html"
+              class="navbar-brand logo text-uppercase font-weight-bold"
+              >AWS
+            </a>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a
+                    href="./index.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Trang chủ <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./scholarship.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Học bổng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./search.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Tra cứu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./login.html"
+                    class="nav-link text-uppercase font-weight-bold"
+                    >Đăng nhập</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Form -->
+      <div class="container px-5">
+        <div class="form__content ml-5 my-5">
+          <div class="form__content__inner px-5">
+            <form action="" id="form_ldp" method="post" data-hs-cf-bound="true">
+              <h3 class="text-center text-capitalize mt-4 mb-3">
+                đăng ký tư vấn tuyển sinh trực tuyến
+              </h3>
+              <p>
+                Để thuận tiện cho việc đăng ký dự thi và xét tuyển của thí sinh,
+                chúng tôi mời bạn đăng ký vào mẫu
+                <strong>đăng ký tư vấn trực tuyến</strong> dưới đây. Đây là căn
+                cứ để chúng tôi có thể <strong>tư vấn online</strong> cho bạn
+                những thông tin sát thực, cập nhật nhất về
+                <strong>kỳ thi tuyển sinh</strong> và
+                <strong>xét tuyển học bạ</strong> của trường Đại Học FPT.
+              </p>
+              <p>Xin điền đầy đủ thông tin tại các mục có dấu (*).</p>
+              <p>
+                Chỉ cần đăng ký 01 lần duy nhất, thông tin của bạn sẽ được lưu
+                trữ trong hệ thống. Chúng tôi sẽ chủ động liên hệ với bạn trong
+                vòng 10 ngày kể từ khi bạn gửi bản đăng ký thông tin sơ bộ này.
+              </p>
+              <div class="form-group row mt-4">
+                <div class="col-md-6">
+                  <label for="ex1">Họ và tên *</label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    class="form-control"
+                    id="email"
+                    required=""
+                    placeholder="Họ và tên *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="ex1">Điện thoại *</label>
+                  <input
+                    type="text"
+                    required=""
+                    name="mobilephone"
+                    class="form-control mobile_2"
+                    placeholder="Điện thoại *"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="ex3">Email *</label>
+                  <input
+                    type="email"
+                    required=""
+                    name="email"
+                    id="email_f2"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="ex3">Ngày sinh</label>
+                  <input
+                    type="text"
+                    name="birthday"
+                    class="form-control hasDatepicker"
+                    id="birthdate"
+                    swichtab-contents=""
+                    placeholder="Ngày sinh (dd-mm-yyyy)"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="ex3">Tỉnh/thành phố *</label>
+                  <select class="form-control" name="city_id" required="">
+                    <option value="">Tỉnh / Thành phố</option>
+                    <option class="" value="An Giang">An Giang</option>
+                    <option class="" value="Bà Rịa-Vũng Tàu">
+                      Bà Rịa-Vũng Tàu
+                    </option>
+                    <option class="" value="Bắc Giang">Bắc Giang</option>
+                    <option class="" value="Bắc Kạn">Bắc Kạn</option>
+                    <option class="" value="Bạc Liêu">Bạc Liêu</option>
+                    <option class="" value="Bắc Ninh">Bắc Ninh</option>
+                    <option class="" value="Bến Tre">Bến Tre</option>
+                    <option class="" value="Bình Dương">Bình Dương</option>
+                    <option class="" value="Bình Định">Bình Định</option>
+                    <option class="" value="Bình Phước">Bình Phước</option>
+                    <option class="" value="Bình Thuận">Bình Thuận</option>
+                    <option class="" value="Cà Mau">Cà Mau</option>
+                    <option class="" value="Cần Thơ">Cần Thơ</option>
+                    <option class="" value="Cao Bằng">Cao Bằng</option>
+                    <option class="" value="Đà Nẵng">Đà Nẵng</option>
+                    <option class="" value="Đắk Lắk">Đắk Lắk</option>
+                    <option class="" value="Đăk Nông">Đăk Nông</option>
+                    <option class="" value="Điện Biên">Điện Biên</option>
+                    <option class="" value="Đồng Nai">Đồng Nai</option>
+                    <option class="" value="Đồng Tháp">Đồng Tháp</option>
+                    <option class="" value="Gia Lai">Gia Lai</option>
+                    <option class="" value="Hà Giang">Hà Giang</option>
+                    <option class="" value="Hà Nam">Hà Nam</option>
+                    <option class="" value="Hà Tĩnh">Hà Tĩnh</option>
+                    <option class="" value="Hải Dương">Hải Dương</option>
+                    <option class="" value="Hải Phòng">Hải Phòng</option>
+                    <option class="" value="Hậu Giang">Hậu Giang</option>
+                    <option class="" value="Hoà Bình">Hoà Bình</option>
+                    <option class="" value="Hưng Yên">Hưng Yên</option>
+                    <option class="" value="Khánh Hoà">Khánh Hoà</option>
+                    <option class="" value="Kiên Giang">Kiên Giang</option>
+                    <option class="" value="Kon Tum">Kon Tum</option>
+                    <option class="" value="Lai Châu">Lai Châu</option>
+                    <option class="" value="Lâm Đồng">Lâm Đồng</option>
+                    <option class="" value="Lạng Sơn">Lạng Sơn</option>
+                    <option class="" value="Lào Cai">Lào Cai</option>
+                    <option class="" value="Long An">Long An</option>
+                    <option class="" value="Nam Định">Nam Định</option>
+                    <option class="" value="Nghệ An">Nghệ An</option>
+                    <option class="" value="Ninh Bình">Ninh Bình</option>
+                    <option class="" value="Ninh Thuận">Ninh Thuận</option>
+                    <option class="" value="Nước Ngoài">Nước Ngoài</option>
+                    <option class="" value="Phú Thọ">Phú Thọ</option>
+                    <option class="" value="Phú Yên">Phú Yên</option>
+                    <option class="" value="Quảng Bình">Quảng Bình</option>
+                    <option class="" value="Quảng Nam">Quảng Nam</option>
+                    <option class="" value="Quảng Ngãi">Quảng Ngãi</option>
+                    <option class="" value="Quảng Ninh">Quảng Ninh</option>
+                    <option class="" value="Quảng Trị">Quảng Trị</option>
+                    <option class="" value="Sóc Trăng">Sóc Trăng</option>
+                    <option class="" value="Sơn La">Sơn La</option>
+                    <option class="" value="Tây Ninh">Tây Ninh</option>
+                    <option class="" value="Thái Bình">Thái Bình</option>
+                    <option class="" value="Thái Nguyên">Thái Nguyên</option>
+                    <option class="" value="Thanh Hoá">Thanh Hoá</option>
+                    <option class="" value="Thừa Thiên -Huế">
+                      Thừa Thiên -Huế
+                    </option>
+                    <option class="" value="Tiền Giang">Tiền Giang</option>
+                    <option class="" value="Trà Vinh">Trà Vinh</option>
+                    <option class="" value="Tuyên Quang">Tuyên Quang</option>
+                    <option class="" value="Vĩnh Long">Vĩnh Long</option>
+                    <option class="" value="Vĩnh Phúc">Vĩnh Phúc</option>
+                    <option class="" value="Yên Bái">Yên Bái</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="ex3">Trường THPT</label>
+                  <input
+                    type="text"
+                    name="school"
+                    class="form-control"
+                    placeholder="Trường THPT/Đại học"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-group text-center mb-0">
+                  <input type="hidden" name="ldp_id" value="tuyen-sinh" />
+                  <input type="hidden" name="utm_source" value="" />
+                  <input type="hidden" name="utm_medium" value="" />
+                  <input type="hidden" name="utm_campaign" value="" />
+                  <input type="hidden" name="utm_term" value="" />
+                  <input
+                    type="hidden"
+                    name="url_referer"
+                    value="https://daihoc.fpt.edu.vn/tuyen-sinh/"
+                  />
+                  <input type="hidden" name="utm_cpname" value="" />
+                  <input
+                    type="hidden"
+                    name="script_uri"
+                    value="https://daihoc.fpt.edu.vn/tuyen-sinh/"
+                  />
+                  <input type="hidden" name="type_register" value="TV" />
+                  <button
+                    type="submit"
+                    class="form-submit rounded-pill border-0 px-3 py-2 fw-bold cursor-pointer"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer pb-5">
+        <div class="container">
+          <div class="footer-title mb-3">
+            © 2022 Bản quyền thuộc về Trường Đại học FPT.
+          </div>
+          <div class="footer-line mb-2"></div>
+          <div class="footer-contact row">
+            <div class="footer-area col">
+              <div class="contact-title">HÀ NỘI</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">TP. HỒ CHÍ MINH</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">Đà Nẵng</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">Cần Thơ</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+            <div class="footer-area col">
+              <div class="contact-title">Quy Nhơn</div>
+              <div class="contact-address">
+                Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại
+                lộ Thăng Long, H. Thạch Thất, TP. Hà Nội
+              </div>
+              <div class="contact-phone">Điện thoại: 024 7300 1866</div>
+              <div class="contact-email">Email: daihocfpt@fpt.edu.vn</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
