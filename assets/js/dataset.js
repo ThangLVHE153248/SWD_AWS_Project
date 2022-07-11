@@ -3,42 +3,48 @@ exports.Register = [
         name: 'Hoang Thi Thuy',
         dob: '01/10/2000',
         email:'hoangthithuy@gmail.com',
-        phone: '123-456-654'
+        phone: '123-456-654',
+        location: 'Hải Dương'
        
        },
        {
         name: 'Vu Van Truong',
         dob: '29/01/2000',
         email: 'vuvantruong@gmail.com',
-        phone: '123-456-212'
+        phone: '123-456-212',
+        location: 'Tây Ninh'
        
        },
        {
         name: 'Nguyen Thuy Vy',
         dob: '14/08/2000',
         email: 'nguyenthuyvy@gmail.com',
-        phone: '123-456-135'
+        phone: '123-456-135',
+        location: 'Thái Bình'
        
        },
        {
         name: 'Do Quynh Trang',
         dob: '18/09/2000',
         email: 'doquynhtrang@gmail.com',
-        phone: '123-456-425'
+        phone: '123-456-425',
+        location: 'Quảng Nam'
        
        },
        {
         name: 'Nguyen Nhat Linh',
         dob: '06/07/2000',
         email: 'nguyennhatlinh@gmail.com',
-        phone: '123-456-984'
+        phone: '123-456-984',
+        location: 'Nghệ An'
        
        },
        {
         name: 'Ha Hoang Hai',
         dob: '30/04/2000',
         email: 'hahoanghai@gmail.com',
-        phone: '123-456-150'
+        phone: '123-456-150',
+        location: 'Hải Phòng'
        }
 
 
@@ -55,7 +61,8 @@ exports.Profile= [
         idNumber: '89h3hubfeui',
         email: 'buihuutu@gmail.com',
         phone:'123-456-515',
-        school: 'THPT ABC'
+        school: 'THPT ABC',
+        location: 'Thanh Hoá'
         
     },
     {
@@ -66,8 +73,8 @@ exports.Profile= [
         idNumber: 'uih3498fh3h',
         email: 'tranviethoang@gmail.com',
         phone:'123-456-420',
-        school: 'THPT ABC'
-        
+        school: 'THPT ABC',
+        location: 'Ninh Bình'
     },
     {
         profileId: 3,
@@ -77,8 +84,8 @@ exports.Profile= [
         idNumber: '3g7f8giu3bui',
         email: 'nguyenvananh@gmail.com',
         phone:'123-456-210',
-        school: 'THPT ABC'
-        
+        school: 'THPT ABC',
+        location: 'Hải Phòng'
     },
     {
         profileId: 4,
@@ -88,8 +95,8 @@ exports.Profile= [
         idNumber: '98389fh8934',
         email: 'nguyentuandat@gmail.com',
         phone:'123-456-782',
-        school: 'THPT ABC'
-        
+        school: 'THPT ABC',
+        location: 'Khánh Hoà'
     },
     {
         profileId: 5,
@@ -99,8 +106,8 @@ exports.Profile= [
         idNumber: 'aqe38hgu2o',
         email: 'leanhminh@gmail.com',
         phone:'123-456-128',
-        school: 'THPT ABC'
-        
+        school: 'THPT ABC',
+        location: 'Quảng Trị'
     }
 
 
