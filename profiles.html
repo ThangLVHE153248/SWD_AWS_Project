@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active" style="height: 100vh">
+          <div class="sidebar-header">
+            <div class="d-flex justify-content-between">
+              <div class="logo">
+                <a href="profiles.html" class="color-primary fw-bolder">AWS</a>
+              </div>
+              <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"
+                  ><i class="bi bi-x bi-middle"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sidebar-menu d-flex flex-column justify-content-between"
+            style="position: relative; min-height: 80%"
+          >
+            <ul class="menu">
+              <li class="sidebar-title fw-bolder fs-5 text-uppercase">Menu</li>
+
+              <li class="sidebar-item">
+                <a href="./profiles.html" class="sidebar-link color-primary">
+                  <i class="bi bi-grid-fill color-primary"></i>
+                  <span>Hồ sơ</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item">
+                <a href="./posts.html" class="sidebar-link color-primary">
+                  <i class="bi bi-stack color-primary"></i>
+                  <span>Bài viết</span>
+                </a>
+              </li>
+            </ul>
+            <div class="text-center">
+              <a href="./index.html" class="btn-danger btn py-2 w-50"
+                >Log out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="profile-list">
+        <!-- Headbar -->
+        <div class="headbar d-flex justify-content-between">
+          <div className="d-flex">
+            <input
+              type="text"
+              placeholder="Type here to search"
+              className="profile-search-input text-white outline-none"
+              style="height: 100%"
+            />
+            <button class="btn-primary btn" style="padding: 12px 13px 4px">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+          <div class="text-center">
+            <a href="./add-profile.html" class="btn-primary btn py-2"
+              >Thêm hồ sơ</a
+            >
+          </div>
+        </div>
+        <!-- Profile list -->
+        <div class="d-flex flex-wrap">
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Profile card -->
+          <a class="card profile-item px-4 py-3" href="./profile-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-4">
+                <img
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-8 lh-lg text-dark">
+                <div class="fs-3 fw-bold profile-name">Trần Văn Đức</div>
+                <div>
+                  <i class="bi bi-calendar"></i>
+                  25/09/2000
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  duc2509@gmail.com
+                </div>
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  0475123540
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/dashboard.js"></script>
+
+    <script>
+      const listTD = document.querySelectorAll("table tbody tr");
+      console.log(listTD);
+
+      listTD.forEach((e) =>
+        e.addEventListener("mouseenter", (event) => {
+          listTD.forEach((e) => e.classList.remove("hover"));
+          event.target.classList.add("hover");
+          console.log(event.target.classList);
+        })
+      );
+    </script>
+  </body>
+</html>
