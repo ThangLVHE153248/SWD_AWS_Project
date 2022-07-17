@@ -70,7 +70,7 @@
                 <a
                   href="./search.html"
                   class="nav-link text-uppercase font-weight-bold"
-                  >Tra cứu</a
+                  >Tư vấn</a
                 >
               </li>
               <li class="nav-item">
@@ -281,9 +281,9 @@
                         <label for="ex1">Họ và tên *</label>
                         <input
                           type="text"
-                          name="firstname"
+                          name="fullName"
                           class="form-control"
-                          id="email"
+                          id="fullName"
                           required=""
                           placeholder="Họ và tên *"
                         />
@@ -293,7 +293,7 @@
                         <input
                           type="text"
                           required=""
-                          name="mobilephone"
+                          name="phone"
                           class="form-control mobile_2"
                           placeholder="Điện thoại *"
                         />
@@ -315,7 +315,7 @@
                         <label for="ex3">Ngày sinh</label>
                         <input
                           type="text"
-                          name="birthday"
+                          name="dob"
                           class="form-control hasDatepicker"
                           id="birthdate"
                           swichtab-contents=""
@@ -327,7 +327,11 @@
                     <div class="form-group row">
                       <div class="col-md-6">
                         <label for="ex3">Tỉnh/thành phố *</label>
-                        <select class="form-control" name="city_id" required="">
+                        <select
+                          class="form-control"
+                          name="location"
+                          required=""
+                        >
                           <option value="">Tỉnh / Thành phố</option>
                           <option class="" value="An Giang">An Giang</option>
                           <option class="" value="Bà Rịa-Vũng Tàu">
@@ -425,72 +429,9 @@
                           </option>
                         </select>
                       </div>
-                      <div class="col-md-6">
-                        <label for="ex3">Trường THPT</label>
-                        <input
-                          type="text"
-                          name="school"
-                          class="form-control"
-                          placeholder="Trường THPT/Đại học"
-                        />
-                      </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-12">
-                        <label>Đăng ký *</label>
-                        <div class="form-group">
-                          <label class="checkbox-inline">
-                            <input
-                              type="checkbox"
-                              name="type_register"
-                              value="TV"
-                            />
-                            Tư vấn
-                          </label>
-                          <label class="checkbox-inline">
-                            <input
-                              type="checkbox"
-                              name="type_register"
-                              value="XT"
-                            />
-                            Tuyển sinh
-                          </label>
-                          <label class="checkbox-inline">
-                            <input
-                              type="checkbox"
-                              name="type_register"
-                              value="XHB"
-                            />
-                            Xét học bổng
-                          </label>
-                          <label class="checkbox-inline">
-                            <input
-                              type="checkbox"
-                              name="type_register"
-                              value="HB"
-                            />
-                            Thi học bổng
-                          </label>
-                        </div>
-                      </div>
                       <div class="form-group text-center mb-0">
-                        <input type="hidden" name="ldp_id" value="tuyen-sinh" />
-                        <input type="hidden" name="utm_source" value="" />
-                        <input type="hidden" name="utm_medium" value="" />
-                        <input type="hidden" name="utm_campaign" value="" />
-                        <input type="hidden" name="utm_term" value="" />
-                        <input
-                          type="hidden"
-                          name="url_referer"
-                          value="https://daihoc.fpt.edu.vn/tuyen-sinh/"
-                        />
-                        <input type="hidden" name="utm_cpname" value="" />
-                        <input
-                          type="hidden"
-                          name="script_uri"
-                          value="https://daihoc.fpt.edu.vn/tuyen-sinh/"
-                        />
-                        <input type="hidden" name="type_register" value="TV" />
                         <button
                           type="submit"
                           class="form-submit rounded-pill border-0 px-3 py-2 fw-bold cursor-pointer"
@@ -573,5 +514,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>

@@ -1610,11 +1610,14 @@ body {
   margin-left: 0px;
   padding: 20px 15px 0px;
 }
-.profile-item {
-  width: 370px;
+.profile-item,
+.post-item {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+.profile-item {
+  width: 370px;
 }
 .profile-name:hover {
   color: #f37125;
@@ -1624,8 +1627,35 @@ body {
   margin-right: 30px;
   color: #f37125;
 }
+.profile-card-des {
+  font-size: 14px;
+}
 @media (min-width: 992px) {
   .profile-list {
     margin-left: 310px;
   }
+}
+/* Post item */
+.post-item {
+  width: 560px;
+}
+/* Register Form */
+.pending {
+  color: #ffca01;
+}
+.accept {
+  color: #5d9700;
+}
+.decline {
+  color: #a70618;
+}
+/* Register Action */
+#register-pending {
+  background-color: #ffca01;
+}
+#register-accept {
+  background-color: #5d9700;
+}
+#register-decline {
+  background-color: #a70618;
 }

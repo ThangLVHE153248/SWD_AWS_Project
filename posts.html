@@ -2,22 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWS - University Admissions Management System</title>
+    <title>Dashboard</title>
 
-    <!-- Link css and font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
     />
     <link
       rel="stylesheet"
       href="assets/vendors/bootstrap-icons/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
   </head>
 
   <body>
@@ -49,13 +51,21 @@
                   <span>Hồ sơ</span>
                 </a>
               </li>
-
               <li class="sidebar-item">
+                <a
+                  href="./register-forms.html"
+                  class="sidebar-link color-primary"
+                >
+                  <i class="bi bi-file-earmark-break-fill color-primary"></i>
+                  <span>Đơn đăng ký</span>
+                </a>
+              </li>
+              <!-- <li class="sidebar-item">
                 <a href="./posts.html" class="sidebar-link color-primary">
                   <i class="bi bi-stack color-primary"></i>
                   <span>Bài viết</span>
                 </a>
-              </li>
+              </li> -->
             </ul>
             <div class="text-center">
               <a href="./index.html" class="btn-danger btn py-2 w-50"
@@ -66,16 +76,162 @@
         </div>
       </div>
       <main class="profile-list">
-        <div class="container content"></div>
+        <!-- Tab bar -->
+        <div class="headbar d-flex justify-content-between">
+          <div className="d-flex">
+            <input
+              type="text"
+              placeholder="Type here to search"
+              className="profile-search-input text-white outline-none"
+              style="height: 100%"
+            />
+            <button class="btn-primary btn" style="padding: 12px 13px 4px">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+          <div class="text-center">
+            <a href="./post-add.html" class="btn-primary btn py-2"
+              >Thêm bài viết</a
+            >
+          </div>
+        </div>
+        <!-- Post list -->
+        <div class="d-flex flex-wrap">
+          <!-- Post card -->
+          <a class="card post-item px-4 py-3" href="./post-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-5">
+                <img
+                  src="./assets/images/post-img-1.jpg"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-7 lh-lg text-dark">
+                <div class="fs-5 fw-bold profile-name">
+                  Quy chế tuyển sinh 2022
+                </div>
+                <div>
+                  QUY CHẾ TUYỂN SINH HỆ ĐẠI HỌC CHÍNH QUY NĂM 2022 TRƯỜNG ĐẠI
+                  HỌC FPT I. Chỉ tiêu tuyển sinh…
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Post card -->
+          <a class="card post-item px-4 py-3" href="./post-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-5">
+                <img
+                  src="./assets/images/post-img-2.jpeg"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-7 lh-lg text-dark">
+                <div class="fs-5 fw-bold profile-name">Học bổng - tín dụng</div>
+                <div>
+                  QUY ĐỊNH HỌC BỔNG – TÍN DỤNG NĂM 2022 CHO SINH VIÊN HỆ ĐẠI HỌC
+                  CHÍNH QUY TRƯỜNG ĐẠI HỌC…
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Post card -->
+          <a class="card post-item px-4 py-3" href="./post-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-5">
+                <img
+                  src="./assets/images/post-img-3.jpg"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-7 lh-lg text-dark">
+                <div class="fs-5 fw-bold profile-name">Thủ tục đăng ký</div>
+                <div>
+                  THỦ TỤC ĐĂNG KÝ Thí sinh đủ điều kiện tuyển sinh vào Đại học
+                  FPT có thể nộp hồ sơ ...
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Post card -->
+          <a class="card post-item px-4 py-3" href="./post-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-5">
+                <img
+                  src="./assets/images/post-img-4.jpg"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-7 lh-lg text-dark">
+                <div class="fs-5 fw-bold profile-name">Học phí</div>
+                <div>
+                  Trường Đại học FPT trân trọng thông báo các mức học phí áp
+                  dụng cho sinh viên hệ đại học…
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Post card -->
+          <a class="card post-item px-4 py-3" href="./post-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-5">
+                <img
+                  src="./assets/images/post-img-5.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-7 lh-lg text-dark">
+                <div class="fs-5 fw-bold profile-name">Câu hỏi thường gặp</div>
+                <div>
+                  SINH 1. Tôi có mong muốn theo học Trường ĐH FPT. Có thể cho
+                  tôi biết điều kiện…
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Post card -->
+          <a class="card post-item px-4 py-3" href="./post-detail.html">
+            <div class="d-flex flex-row gap-3 align-items-center">
+              <div class="col-5">
+                <img
+                  src="./assets/images/post-img-6.png"
+                  class="w-100 rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-7 lh-lg text-dark">
+                <div class="fs-5 fw-bold profile-name">Các biểu mẫu</div>
+                <div>
+                  Các thí sinh có thể tải các biểu mẫu: Tải Phiếu đăng ký Đại
+                  học FPT; Tải Phiếu nhập học;…
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </main>
     </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./assets/js/navbar.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="assets/js/dashboard.js"></script>
+
+    <script>
+      const listTD = document.querySelectorAll("table tbody tr");
+      console.log(listTD);
+
+      listTD.forEach((e) =>
+        e.addEventListener("mouseenter", (event) => {
+          listTD.forEach((e) => e.classList.remove("hover"));
+          event.target.classList.add("hover");
+          console.log(event.target.classList);
+        })
+      );
+    </script>
   </body>
 </html>

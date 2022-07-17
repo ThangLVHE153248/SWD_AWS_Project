@@ -49,13 +49,21 @@
                   <span>Hồ sơ</span>
                 </a>
               </li>
-
               <li class="sidebar-item">
+                <a
+                  href="./register-forms.html"
+                  class="sidebar-link color-primary"
+                >
+                  <i class="bi bi-file-earmark-break-fill color-primary"></i>
+                  <span>Đơn đăng ký</span>
+                </a>
+              </li>
+              <!-- <li class="sidebar-item">
                 <a href="./posts.html" class="sidebar-link color-primary">
                   <i class="bi bi-stack color-primary"></i>
                   <span>Bài viết</span>
                 </a>
-              </li>
+              </li> -->
             </ul>
             <div class="text-center">
               <a href="./index.html" class="btn-danger btn py-2 w-50"
@@ -78,97 +86,138 @@
           <div class="row" style="height: 100%">
             <!-- Avatar -->
             <div class="col-md-3 d-flex align-items-center flex-column">
-              <img
-                src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
-                width="200px"
-                style="margin: 0"
-                class="image-profile"
-              /><br />
-              <button class="btn btn-primary">
-                <a href="#" style="color: #fff">Thêm ảnh</a>
-              </button>
+              <p>
+                <input
+                  type="file"
+                  accept="image/png"
+                  name="image"
+                  id="img-file"
+                  style="display: none"
+                />
+              </p>
+              <p>
+                <img
+                  id="output"
+                  src="https://www.shareicon.net/data/512x512/2016/05/26/771204_man_512x512.png"
+                  width="300"
+                />
+              </p>
+              <p>
+                <label for="img-file" class="btn btn-primary"
+                  >Chỉnh sửa ảnh</label
+                >
+              </p>
             </div>
             <!-- Form -->
-            <div class="col-md-9">
+            <div class="col-md-8">
               <div>
-                <form class="mt-4">
-                  <div class="form-group row">
+                <form class="mt-4 ml-5" id="data-form" method="post">
+                  <div class="form-group row pe-none">
                     <div class="col-md-6">
-                      <label for="fullName">Full Name</label>
-                      <input type="text" class="form-control" id="fullName" />
+                      <label for="fullName">Họ và tên</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        name="fullName"
+                        required
+                      />
                     </div>
                     <div class="col-md-6">
-                      <label for="dob">Date of birth</label>
-                      <input type="date" class="form-control" id="dob" />
+                      <label for="dob">Ngày sinh</label>
+                      <input
+                        type="string"
+                        class="form-control"
+                        id="dob"
+                        name="dob"
+                      />
                     </div>
                   </div>
                   <div class="form-group row">
                     <div class="col-md-6">
                       <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" />
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
                     </div>
                     <div class="col-md-6">
-                      <label for="phone">Phone</label>
-                      <input type="text" class="form-control" id="phone" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-md-12">
-                      <label for="shool">School</label>
-                      <input type="text" class="form-control" id="shool" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-md-12">
-                      <label for="location">Location</label>
-                      <input type="text" class="form-control" id="location" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-md-12">
-                      <label for="id">ID Number</label>
-                      <input type="text" class="form-control" id="id" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-md-12">
-                      <label>Gender</label><br />
+                      <label for="phone">Số điện thoại</label>
                       <input
-                        type="radio"
-                        id="male"
-                        value="male"
-                        name="gender"
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
                       />
-                      <label for="male">Male</label>
-                      <input
-                        type="radio"
-                        id="female"
-                        value="female"
-                        name="gender"
-                      />
-                      <label for="female">Female</label>
                     </div>
                   </div>
-                  <!-- Action Button -->
-                  <div class="row mt-5">
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <label for="shool">Trường</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="school"
+                        name="school"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <label for="location">Nơi sinh sống</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="location"
+                        name="location"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <label for="id">Số chứng minh nhân dân</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="id"
+                        name="id"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <label>Giới tính</label><br />
+                      <input type="radio" id="male" value="M" name="gender" />
+                      <label for="male">Nam</label><br />
+                      <input type="radio" id="female" value="F" name="gender" />
+                      <label for="female">Nữ</label><br />
+                      <input type="radio" id="other" value="O" name="gender" />
+                      <label for="female">Khác</label><br />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
                     <div class="col">
-                      <a
-                        href="profiles.html"
-                        type="button"
+                      <button
+                        type="submit"
                         class="btn btn-primary btn-block fw-bold"
                         style="color: #fff"
                       >
-                        Add
-                      </a>
+                        Thêm
+                      </button>
                     </div>
                     <div class="col">
                       <a
-                        href="profiles.html"
                         type="button"
+                        href="http://127.0.0.1:5500/profiles.html"
                         class="btn btn-danger btn-block"
                         style="color: #fff"
+                        id="profile-cancel"
                       >
-                        Cancel
+                        Hủy
                       </a>
                     </div>
                   </div>
@@ -187,5 +236,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./assets/js/profile-add.js"></script>
   </body>
 </html>

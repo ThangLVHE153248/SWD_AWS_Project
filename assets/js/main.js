@@ -1,3 +1,3 @@
-const data = require('./dataset.js');
+const data = require("./dataset.js");
 
-console.log(data.hocBong)
+console.log(data.hocBong);
